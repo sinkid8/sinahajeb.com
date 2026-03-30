@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiGithub, FiMail, FiArrowDown } from "react-icons/fi";
+import { FiGithub, FiMail, FiArrowDown, FiDownload } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -61,7 +61,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl md:text-2xl text-text-muted mb-6 font-light"
         >
-          Full-Stack Developer&nbsp;&nbsp;·&nbsp;&nbsp;ML Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Cybersecurity Learner
+          Full-Stack Developer&nbsp;&nbsp;·&nbsp;&nbsp;ML Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Cybersecurity Enthusiast
         </motion.p>
 
         {/* Tagline */}
@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl mx-auto text-text-muted text-base md:text-lg mb-10 leading-relaxed"
         >
-          Computer Science student at UBC Okanagan building production-grade apps —
+          UBC Computer Science graduate building production-grade apps —
           from ML-powered sports prediction engines to full-stack web platforms.
           Based in Vancouver, Canada.
         </motion.p>
@@ -94,6 +94,14 @@ export default function Hero() {
             className="px-8 py-3 rounded-full border border-white/15 text-white/80 hover:text-white hover:border-white/30 font-medium transition-all duration-200 hover:-translate-y-0.5"
           >
             Get In Touch
+          </a>
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-accent/30 text-accent-light hover:bg-accent/10 hover:border-accent/50 font-medium transition-all duration-200 hover:-translate-y-0.5"
+          >
+            <FiDownload size={16} />
+            Resume
           </a>
         </motion.div>
 

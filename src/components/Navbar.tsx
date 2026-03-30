@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX, FiDownload } from "react-icons/fi";
 
 const links = [
   { label: "About", href: "#about" },
@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           className="font-mono text-accent-light text-lg font-bold tracking-tight hover:text-white transition-colors"
         >
           sina<span className="text-white">.</span>dev
@@ -60,6 +60,14 @@ export default function Navbar() {
             className="px-4 py-1.5 rounded-full border border-accent/50 text-accent-light text-sm hover:bg-accent/10 hover:border-accent transition-all duration-200"
           >
             GitHub
+          </a>
+          <a
+            href="/resume.pdf"
+            download
+            className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-accent/15 hover:bg-accent/25 text-accent-light text-sm font-medium transition-all duration-200"
+          >
+            <FiDownload size={13} />
+            Resume
           </a>
         </nav>
 

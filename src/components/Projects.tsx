@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiPlay } from "react-icons/fi";
 
 const projects = [
   {
@@ -44,6 +44,7 @@ const projects = [
     tech: ["Unity", "C#", "Game Dev"],
     github: "https://github.com/sinkid8/River-Raid-Remake",
     live: null,
+    playUrl: "/game",
     featured: false,
     badge: "Unity · C#",
     badgeColor: "bg-purple-500/15 text-purple-400 border-purple-500/30",
@@ -228,6 +229,15 @@ export default function Projects() {
                 </span>
               ))}
             </div>
+            {"playUrl" in project && project.playUrl && (
+              <a
+                href={project.playUrl}
+                className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent/15 hover:bg-accent/25 text-accent-light text-sm font-semibold transition-all duration-200"
+              >
+                <FiPlay size={13} />
+                Try Game
+              </a>
+            )}
           </motion.div>
         ))}
       </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FiMapPin, FiBook, FiCode } from "react-icons/fi";
+import Image from "next/image";
 
 const highlights = [
   {
@@ -12,7 +13,7 @@ const highlights = [
   {
     icon: FiBook,
     label: "Education",
-    value: "BSc Computer Science — UBC Okanagan",
+    value: "BSc Computer Science — UBC",
   },
   {
     icon: FiCode,
@@ -40,7 +41,7 @@ export default function About() {
           {/* Text */}
           <div className="space-y-5 text-text-muted leading-relaxed">
             <p>
-              I&apos;m a Computer Science student at UBC Okanagan with a passion for
+              I&apos;m a Computer Science graduate from UBC with a passion for
               building things that work at scale. My interests span full-stack web
               development, machine learning, and cybersecurity — and I love
               connecting all three in a single project.
@@ -75,7 +76,11 @@ export default function About() {
                 className="flex items-center gap-4 p-4 rounded-xl bg-bg-card border border-white/5 hover:border-accent/20 transition-colors"
               >
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
-                  <Icon size={18} className="text-accent-light" />
+                  {label === "Education" ? (
+                    <Image src="https://www.ubc.ca/img/ubc-logo-2018-crest-yVERTICAL-blue282.svg" alt="UBC" width={28} height={28} unoptimized />
+                  ) : (
+                    <Icon size={18} className="text-accent-light" />
+                  )}
                 </div>
                 <div>
                   <p className="text-xs text-text-muted mb-0.5">{label}</p>

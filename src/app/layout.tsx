@@ -18,7 +18,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: "Sina Hajeb — Full-Stack Developer",
   description:
-    "Computer Science student at UBC Okanagan. Full-stack developer, ML engineer, and cybersecurity learner based in Vancouver, Canada.",
+    "UBC Computer Science graduate. Full-stack developer, ML engineer, and cybersecurity enthusiast based in Vancouver, Canada.",
   keywords: [
     "Sina Hajeb",
     "Full Stack Developer",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sina Hajeb — Full-Stack Developer",
     description:
-      "CS student at UBC Okanagan. Building production-grade apps from ML prediction engines to full-stack platforms.",
+      "UBC Computer Science graduate. Building production-grade apps from ML prediction engines to full-stack platforms.",
     url: "https://sinahajeb.com",
     siteName: "Sina Hajeb Portfolio",
     locale: "en_CA",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sina Hajeb — Full-Stack Developer",
     description:
-      "CS student at UBC Okanagan building production-grade full-stack and ML apps.",
+      "UBC Computer Science graduate building production-grade full-stack and ML apps.",
   },
   metadataBase: new URL("https://sinahajeb.com"),
 };

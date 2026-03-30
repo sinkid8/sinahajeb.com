@@ -13,8 +13,8 @@ const links = [
   {
     icon: FiMail,
     label: "Email",
-    value: "sinahajeb@icloud.com",
-    href: "mailto:sinahajeb@icloud.com",
+    value: "sinaha8@yahoo.ca",
+    href: "mailto:sinaha8@yahoo.ca",
   },
   {
     icon: FiExternalLink,
@@ -45,7 +45,7 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:sinahajeb@icloud.com"
+            href="mailto:sinaha8@yahoo.ca"
             className="inline-block px-10 py-4 rounded-full bg-accent hover:bg-accent/90 text-white font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:shadow-accent/25 hover:-translate-y-1 mb-14"
           >
             Say Hello →

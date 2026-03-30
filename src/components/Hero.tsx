@@ -114,7 +114,7 @@ export default function Hero() {
             <FiGithub size={22} />
           </a>
           <a
-            href="mailto:sinahajeb@icloud.com"
+            href="mailto:sinaha8@yahoo.ca"
             className="text-text-muted hover:text-white transition-colors"
             aria-label="Email"
           >

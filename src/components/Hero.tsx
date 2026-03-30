@@ -61,7 +61,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl md:text-2xl text-text-muted mb-6 font-light"
         >
-          Full-Stack Developer&nbsp;&nbsp;·&nbsp;&nbsp;ML Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Cybersecurity Enthusiast
+          Full-Stack Developer&nbsp;&nbsp;·&nbsp;&nbsp;ML Engineer&nbsp;&nbsp;·&nbsp;&nbsp;Cybersecurity Consultant
         </motion.p>
 
         {/* Tagline */}

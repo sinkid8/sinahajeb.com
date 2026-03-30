@@ -77,7 +77,7 @@ export default function About() {
               >
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
                   {label === "Education" ? (
-                    <Image src="https://www.ubc.ca/img/ubc-logo-2018-crest-yVERTICAL-blue282.svg" alt="UBC" width={28} height={28} unoptimized />
+                    <Image src="/ubc-logo.png" alt="UBC" width={28} height={28} unoptimized />
                   ) : (
                     <Icon size={18} className="text-accent-light" />
                   )}
